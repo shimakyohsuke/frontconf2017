@@ -247,12 +247,7 @@ p {
 #speaker {
   text-align: center;
   @include page-bottom;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.01+0,0.9+0,0.7+15,0+50,0.7+85,0.9+100 */
-  background: -moz-linear-gradient(top,  rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 15%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.7) 85%, rgba(255,255,255,0.9) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.7) 15%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.7) 85%,rgba(255,255,255,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.7) 15%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.7) 85%,rgba(255,255,255,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#e6ffffff',GradientType=0 ); /* IE6-9 */
-
+  @include gradation--top;
   .container {
     max-width: 1200px;
   }
@@ -294,10 +289,12 @@ p {
     max-width: 160px;
   }
   .speaker__list__name {
+    padding: 0 0 1em;
+    font-size: 1em;
+    font-weight: bold;
     color: $font_light;
-    padding-bottom: .6rem;
     @include mediaPC {
-      padding-bottom: 1rem;
+      padding: 0 0 1.6em;
     }
   }
   .speaker__list__balloon--designer {
@@ -321,18 +318,20 @@ p {
 #sponsor {
   @include page-bottom;
   padding-bottom: 6em;
-  @include gradation;
+  @include gradation--bottom;
 
   .container {
     text-align: center;
     max-width: 1200px;
   }
   .sponsor__intoro {
+    color: $font_light;
     margin: 2em 0 4em;
   }
   .sponsor__heading {
+    color: $font_light;
     font-size: 20px;
-    @include heading(color);
+    @include heading(white);
     @include mediaPC {
       position: relative;
     }
@@ -345,6 +344,10 @@ p {
     text-align: center;
   }
   .sponsor__list {
+    vertical-align: top;
+    min-height: 600px;
+    height: auto;
+    overflow: hidden;
     display: inline-block;
     margin: 0 0 1.2em;
     padding:0 0 2em;
