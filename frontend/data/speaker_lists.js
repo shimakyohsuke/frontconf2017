@@ -21,12 +21,12 @@ module.exports = [
     },
     {
         id: 3,
-        title: "Enduring CSS",
-        detail : "どうCSSを書いていけばCSS設計が破綻しないのか。OOCSS、BEM、SMACSSをはじめとする、多くのCSS設計方法論が考え出されましたが、実際にコードを書いていくと、それらの方法論だけでは解決できない問題が多く発生してきませんか？その問題の一つとして、CSSが複雑になりすぎてしまうという点が挙げられるでしょう。[Enduring CSS](http://ecss.io/)（ECSS）は、Ben Frain氏が、自身の考える良いCSSの設計手法について書いた書籍です。Enduringとは、「不朽の」「恒久的な」という意味合いを持っており、その名の通り、永続的にサイトを運用していくにはどうCSSを設計すればよいかという点にフォーカスしています。長年CSSの設計について悩んできた私に、Enduring CSSは新しい視点を与えてくれました。このセッションでは、Enduring CSSの考え方の概要を紹介します。",
-        link: "https://twitter.com/Takazudo",
-        photo: "takazudo.jpg",
-        name: "高津戸壮 (@Takazudo)",
-        profile: "Web制作会社、フリーランスを経て、株式会社ピクセルグリッドに入社。数多くのWebサイト、WebアプリケーションのHTML、CSS、JavaScript実装に携わってきた。受託案件を中心にフロント周りの実装、設計、テクニカルディレクションを行う。",
+        title: "webの変遷から考えるUIの設計とその先",
+        detail : "スキュアモーフィックからフラット/マテリアルデザインへと「webに最適化したデザイン」が発明されました。そこから、「今」のUIデザインと設計手法、その次に何がくるかを考えます",
+        link: "https://rdlabo.jp/",
+        photo: "sakakibara.jpg",
+        name: "榊原昌彦",
+        profile: "Webサイト、Webアプリ制作に留まらず、まちづくりをフィールドに「どのようにITで効率化・収益化するか」を実践しています。フルスタックエンジニア。一般社団法人リレーションデザイン研究所代表理事。一般社団法人エリア・イノベーション・アライアンスCTO。",
         field: "designer"
     },
     {
@@ -51,42 +51,22 @@ module.exports = [
     },
     {
         id: 6,
-        title: "エンジニアとデザイナーとの距離",
-        detail : "CSS設計に関する話題をよく聞くようになりました。 私自身、CSSの設計を実践して感じたことは、「エンジニアだけでCSSの設計をすることはできないのではないか」ということです。 私が何をして、何を感じて、どう改善していこうと考えているのかをお伝えします。技術的な話はありませんので、いろいろな職種の方に聞いていただきたいと思っています。",
-        link: "https://github.com/manabuyasuda",
-        photo: "unknown.jpg",
-        name: "安田学",
-        profile: "大阪にあるWeb制作会社TAMでマークアップエンジニアをしています。CSS設計が得意です。 不定期ですが、弊社コワーキングスペースで「CSSTalk」というCSSを主題とした勉強会を主催しています。",
-        field: "markup"
+        title: "Enduring CSS",
+        detail : "どうCSSを書いていけばCSS設計が破綻しないのか。OOCSS、BEM、SMACSSをはじめとする、多くのCSS設計方法論が考え出されましたが、実際にコードを書いていくと、それらの方法論だけでは解決できない問題が多く発生してきませんか？その問題の一つとして、CSSが複雑になりすぎてしまうという点が挙げられるでしょう。[Enduring CSS](http://ecss.io/)（ECSS）は、Ben Frain氏が、自身の考える良いCSSの設計手法について書いた書籍です。Enduringとは、「不朽の」「恒久的な」という意味合いを持っており、その名の通り、永続的にサイトを運用していくにはどうCSSを設計すればよいかという点にフォーカスしています。長年CSSの設計について悩んできた私に、Enduring CSSは新しい視点を与えてくれました。このセッションでは、Enduring CSSの考え方の概要を紹介します。",
+        link: "https://twitter.com/Takazudo",
+        photo: "takazudo.jpg",
+        name: "高津戸壮 (@Takazudo)",
+        profile: "Web制作会社、フリーランスを経て、株式会社ピクセルグリッドに入社。数多くのWebサイト、WebアプリケーションのHTML、CSS、JavaScript実装に携わってきた。受託案件を中心にフロント周りの実装、設計、テクニカルディレクションを行う。",
+        field: "designer"
     },
     // {
-    //     title: "懇親会プレゼンWebGL 2.0時代の幕開け - ウェブのグラフィックスはどう変わるのか",
-    //     detail : "WebGL 2.0 がいよいよやってきますね。Webの世界においても求められるグラフィックスの質やレベルは日々変わっていっています。今現在の WebGL の立ち位置と、これから先の WebGL の可能性,、そして WebGL 2.0 の登場で見えてくるそのさらに先の世界について考えてみましょう。",
-    //     link: "http://chatbox-inc.com/page/member/shono/",
-    //     photo: "shono.jpg",
-    //     at: "株式会社 chatbox",
-    //     name: "庄埜 詩織",
-    //     profile: "大阪のWeb制作会社でプログラマーとして働いています。",
-    //     field: "engineer"
-    // },
-    // {
-    //     title: "懇親会プレゼンWebGL 2.0時代の幕開け - ウェブのグラフィックスはどう変わるのか",
-    //     detail : "WebGL 2.0 がいよいよやってきますね。Webの世界においても求められるグラフィックスの質やレベルは日々変わっていっています。今現在の WebGL の立ち位置と、これから先の WebGL の可能性,、そして WebGL 2.0 の登場で見えてくるそのさらに先の世界について考えてみましょう。",
-    //     link: "http://chatbox-inc.com/page/member/shono/",
-    //     photo: "shono.jpg",
-    //     at: "株式会社 chatbox",
-    //     name: "庄埜 詩織",
-    //     profile: "大阪のWeb制作会社でプログラマーとして働いています。",
-    //     field: "designer"
-    // },
-    // {
-    //     title: "懇親会プレゼンWebGL 2.0時代の幕開け - ウェブのグラフィックスはどう変わるのか",
-    //     detail : "WebGL 2.0 がいよいよやってきますね。Webの世界においても求められるグラフィックスの質やレベルは日々変わっていっています。今現在の WebGL の立ち位置と、これから先の WebGL の可能性,、そして WebGL 2.0 の登場で見えてくるそのさらに先の世界について考えてみましょう。",
-    //     link: "http://chatbox-inc.com/page/member/shono/",
-    //     photo: "shono.jpg",
-    //     at: "株式会社 chatbox",
-    //     name: "庄埜 詩織",
-    //     profile: "大阪のWeb制作会社でプログラマーとして働いています。",
+    //     id: 7,
+    //     title: "エンジニアとデザイナーとの距離",
+    //     detail : "CSS設計に関する話題をよく聞くようになりました。 私自身、CSSの設計を実践して感じたことは、「エンジニアだけでCSSの設計をすることはできないのではないか」ということです。 私が何をして、何を感じて、どう改善していこうと考えているのかをお伝えします。技術的な話はありませんので、いろいろな職種の方に聞いていただきたいと思っています。",
+    //     link: "https://github.com/manabuyasuda",
+    //     photo: "unknown.jpg",
+    //     name: "安田学",
+    //     profile: "大阪にあるWeb制作会社TAMでマークアップエンジニアをしています。CSS設計が得意です。 不定期ですが、弊社コワーキングスペースで「CSSTalk」というCSSを主題とした勉強会を主催しています。",
     //     field: "markup"
-    // }
+    // },
 ];
