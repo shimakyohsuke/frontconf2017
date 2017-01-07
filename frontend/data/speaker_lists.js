@@ -52,21 +52,41 @@ module.exports = [
     {
         id: 6,
         title: "Enduring CSS",
-        detail : "どうCSSを書いていけばCSS設計が破綻しないのか。OOCSS、BEM、SMACSSをはじめとする、多くのCSS設計方法論が考え出されましたが、実際にコードを書いていくと、それらの方法論だけでは解決できない問題が多く発生してきませんか？その問題の一つとして、CSSが複雑になりすぎてしまうという点が挙げられるでしょう。[Enduring CSS](http://ecss.io/)（ECSS）は、Ben Frain氏が、自身の考える良いCSSの設計手法について書いた書籍です。Enduringとは、「不朽の」「恒久的な」という意味合いを持っており、その名の通り、永続的にサイトを運用していくにはどうCSSを設計すればよいかという点にフォーカスしています。長年CSSの設計について悩んできた私に、Enduring CSSは新しい視点を与えてくれました。このセッションでは、Enduring CSSの考え方の概要を紹介します。",
+        detail : "どうCSSを書いていけばCSS設計が破綻しないのか。OOCSS、BEM、SMACSSをはじめとする、多くのCSS設計方法論が考え出されましたが、実際にコードを書いていくと、それら方法論だけでは解決できない問題が多く発生してきませんか？Enduring CSSは、Ben Frain氏が、破綻しないCSS設計についてまとめた書籍です。このセッションではEnduring CSSの考え方の概要を紹介します。",
         link: "https://twitter.com/Takazudo",
         photo: "takazudo.jpg",
         name: "高津戸壮 (@Takazudo)",
         profile: "Web制作会社、フリーランスを経て、株式会社ピクセルグリッドに入社。数多くのWebサイト、WebアプリケーションのHTML、CSS、JavaScript実装に携わってきた。受託案件を中心にフロント周りの実装、設計、テクニカルディレクションを行う。",
         field: "designer"
     },
-    // {
-    //     id: 7,
-    //     title: "エンジニアとデザイナーとの距離",
-    //     detail : "CSS設計に関する話題をよく聞くようになりました。 私自身、CSSの設計を実践して感じたことは、「エンジニアだけでCSSの設計をすることはできないのではないか」ということです。 私が何をして、何を感じて、どう改善していこうと考えているのかをお伝えします。技術的な話はありませんので、いろいろな職種の方に聞いていただきたいと思っています。",
-    //     link: "https://github.com/manabuyasuda",
-    //     photo: "unknown.jpg",
-    //     name: "安田学",
-    //     profile: "大阪にあるWeb制作会社TAMでマークアップエンジニアをしています。CSS設計が得意です。 不定期ですが、弊社コワーキングスペースで「CSSTalk」というCSSを主題とした勉強会を主催しています。",
-    //     field: "markup"
-    // },
+    {
+        id: 7,
+        title: "エンジニアとデザイナーとの距離",
+        detail : "CSS設計に関する話題をよく聞くようになりました。 私自身、CSSの設計を実践して感じたことは、「エンジニアだけでCSSの設計をすることはできないのではないか」ということです。 私が何をして、何を感じて、どう改善していこうと考えているのかをお伝えします。技術的な話はありませんので、いろいろな職種の方に聞いていただきたいと思っています。",
+        link: "https://github.com/manabuyasuda",
+        photo: "unknown.jpg",
+        name: "安田学",
+        profile: "大阪にあるWeb制作会社TAMでマークアップエンジニアをしています。CSS設計が得意です。 不定期ですが、弊社コワーキングスペースで「CSSTalk」というCSSを主題とした勉強会を主催しています。",
+        field: "markup"
+    },
+    {
+        id: 8,
+        title: "いわゆる\"フロントエンド\"がない世界について考える",
+        detail : "フロントエンド = GUIという固定概念ありませんか？ブラウザ以外でユーザーとやり取りする。そんな\"フロントエンド\"について紹介します。",
+        link: "https://wp-kyoto.net/",
+        photo: "okamoto.jpg",
+        name: "岡本秀高",
+        profile: "Digitalcubeインフラエンジニア Amazon AlexaやWordPress、Serverless FWなどを使ってよくわからないことをしている太鼓の人",
+        field: "engineer"
+    },
+    {
+        id: 9,
+        title: "ウェブを構成するUIの品質とHTML",
+        detail : "ウェブサイトもウェブアプリケーションにおいても、それらの中に存在するUIは最終的にHTMLとなってユーザーに届けられます。ウェブのUIの品質とはなにかを改めて考え、またそれを実現するHTML（及びその周辺技術）の実装について見直します。",
+        link: "http://masup.net/",
+        photo: "masuda.jpg",
+        name: "桝田 草一",
+        profile: "株式会社サイバーエージェントで生放送プラットフォーム「FRESH!（フレッシュ）」のフロントエンドを担当しているエンジニアです。",
+        field: "markup"
+    },
 ];
