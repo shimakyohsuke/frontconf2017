@@ -89,4 +89,14 @@ module.exports = [
         profile: "株式会社サイバーエージェントで生放送プラットフォーム「FRESH!（フレッシュ）」のフロントエンドを担当しているエンジニアです。",
         field: "markup"
     },
+    {
+        id: 10,
+        title: "CSSフレームワークをつくろう！",
+        detail : "Stylus/CSSフレームワーク「Basis」の開発経験をもとに、CSSフレームワークの魅力やこれからCSSフレームワークをつくってみたいという方に理想的なCSSフレームワークをつくるためのポイント、注意点などをお話しできればと思います。",
+        link: "https://2inc.org",
+        photo: "kitajima.jpg",
+        name: "キタジマタカシ",
+        profile: "長崎でフリーランスとしてWordPressテーマ・プラグイン開発やHTML/CSSコーディングなどの仕事をしながら、色々なプロダクトをOSSとして公開しています。",
+        field: "designer"
+    },
 ];
