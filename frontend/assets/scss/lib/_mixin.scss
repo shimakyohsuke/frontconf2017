@@ -293,7 +293,7 @@
 }
 @mixin balloon--topPage($bgc) {
   @include balloon($bgc);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   min-height: 3.5em;
   padding: 1rem;
   &::before {
@@ -315,7 +315,7 @@
     &::before {
       margin-left: -7px;
       bottom: -25px;
-      left: 48%;
+      left: 50%;
       border-top: 14px solid $bgc;
       border-right: 14px solid transparent;
       border-bottom: 14px solid transparent;

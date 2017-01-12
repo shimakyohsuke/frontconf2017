@@ -58,9 +58,9 @@ p {
     display: inline-block;
     min-width: 100%;
     max-width: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     @include mediaPC {
-      padding-bottom: 4rem;
+      margin-bottom: 70px;
       min-width: 70%;
       max-width: 70%;
     }
@@ -101,6 +101,7 @@ p {
     }
   }
   .session__list__pict {
+    margin-top: -10px;
     display: inline-block;
     width: 35%;
     img {
