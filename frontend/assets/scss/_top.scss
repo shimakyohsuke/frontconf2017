@@ -243,6 +243,52 @@ p {
     }
   }
 }
+#new_session{
+  .session__title__background{
+    text-align: center;
+    max-width: 1200px;
+    padding:50px;
+    .container{
+      .session__title{
+        color: $font-light;
+      }
+      .session__subtitle{
+        color: $font-light;
+      }
+    }
+  }
+  .session__content__background{
+    background-color: rgba(255,255,255,0.6);
+    padding:50px;
+    .container{
+      text-align: center;
+      max-width: 1200px;
+      .session__lists{
+        .session__list{
+          width:500px;
+          margin:20px;
+          border:solid 10px white;
+          box-sizing: border-box;
+          display: inline-block;
+          background-image: url("../../img/bg.jpg");
+          .session__list__img {
+            display: inline-block;
+            width: 20%;
+            border:solid 2px black;
+            box-sizing: border-box;
+          }
+          .session__list__text{
+            display: inline-block;
+            width:80%;
+            padding: 10px;
+            box-sizing: border-box;
+            color: $font_light;
+          }
+        }
+      }
+    }
+  }
+}
 #handson{
   .handson__title__background{
     .container{
@@ -277,22 +323,21 @@ p {
               display:inline-block;
               width:300px;
               background-color:white;
+              padding:10px;
+              box-sizing: border-box;
               border-radius: 3px;
           }
           .handson__list__body{
               display: inline-block;
               width:500px;
-              color:$font-light;
           }
         }
       }
-
-
     }
   }
 }
 #discussion{
-  .discussion__title__buckground{
+  .discussion__title__background{
     .container {
       text-align: center;
       max-width: 1200px;
@@ -330,7 +375,6 @@ p {
         .discussion__list:after{
           position: absolute;
           content:"";
-          bottom:-10px;
           transform: rotate(-45deg);
           padding:10px;
           background-image:url("../../img/bg.jpg");
@@ -602,6 +646,13 @@ p {
     border-collapse:collapse;
     box-sizing: border-box;
     color: $font_light;
+    background-color: rgba(0,0,0,0.2);
+    font-size:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:20px;
+    padding-left:20px;
+    box-sizing: border-box;
   }
   .about__td{
     border:solid 1px white;
@@ -609,6 +660,9 @@ p {
     box-sizing: border-box;
     color: $font_light;
     width:700px;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
   }
 }
 
