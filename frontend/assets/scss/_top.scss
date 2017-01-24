@@ -243,16 +243,66 @@ p {
     }
   }
 }
-#discussion{
-  .container {
-    text-align: center;
-    max-width: 1200px;
-    padding:50px;
-    .discussion__title {
-      color: $font-light;
+#handson{
+  .handson__title__background{
+    .container{
+      text-align: center;
+      max-width: 1200px;
+      padding:50px;
+      .handson__title {
+        color: $font-light;
+      }
+      .handson__subtitle {
+        color: $font-light;
+      }
     }
-    .discussion__subtitle {
-      color: $font-light;
+  }
+  .handson__content__background{
+    background-color: rgba(255,255,255,0.6);
+    padding:50px;
+    .container{
+      text-align: center;
+      max-width: 1200px;
+      .handson__text{
+
+      }
+      .handson__lists{
+        .handson__list{
+          list-style: none;
+          width:800px;
+          margin:30px auto;
+          border-radius: 4px;
+          background-image: url("../../img/bg.jpg");
+          .handson__list__head{
+              display:inline-block;
+              width:300px;
+              background-color:white;
+              border-radius: 3px;
+          }
+          .handson__list__body{
+              display: inline-block;
+              width:500px;
+              color:$font-light;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+#discussion{
+  .discussion__title__buckground{
+    .container {
+      text-align: center;
+      max-width: 1200px;
+      padding:50px;
+      .discussion__title {
+        color: $font-light;
+      }
+      .discussion__subtitle {
+        color: $font-light;
+      }
     }
   }
   .discussion__content__background{
@@ -280,6 +330,7 @@ p {
         .discussion__list:after{
           position: absolute;
           content:"";
+          bottom:-10px;
           transform: rotate(-45deg);
           padding:10px;
           background-image:url("../../img/bg.jpg");

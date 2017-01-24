@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b981599e-a5f9-4c28-aadc-62ff820f34f5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/assets/scss/_top.scss" afterPath="$PROJECT_DIR$/frontend/assets/scss/_top.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/assets/tmpl/_head.jade" afterPath="$PROJECT_DIR$/frontend/assets/tmpl/_head.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/assets/tmpl/index.jade" afterPath="$PROJECT_DIR$/frontend/assets/tmpl/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_discussion.jade" afterPath="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_discussion.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_handson.jade" afterPath="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_handson.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_summary.jade" afterPath="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_summary.jade" />
     </list>
     <ignored path="frontconf2017.iws" />
@@ -29,58 +31,48 @@
       <file leaf-file-name="_sec_summary.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_summary.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="51" selection-start-line="7" selection-start-column="12" selection-end-line="32" selection-end-column="51" />
+            <state relative-caret-position="165">
+              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_sec_discussion.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_discussion.jade">
+      <file leaf-file-name="session.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/session.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_sec_handson.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_sec_session.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/session/_sec_session.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sec_discussion.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_discussion.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sec_handson.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_handson.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sec_share.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_share.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="20" column="28" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sec_hero.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_hero.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="285">
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -99,8 +91,8 @@
       <file leaf-file-name="_top.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/assets/scss/_top.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="274" column="18" selection-start-line="274" selection-start-column="18" selection-end-line="274" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="338" column="0" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -136,10 +128,10 @@
         <option value="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_discussion.jade.pug" />
         <option value="$PROJECT_DIR$/frontend/assets/tmpl/session.jade" />
         <option value="$PROJECT_DIR$/frontend/assets/tmpl/index.jade" />
-        <option value="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_summary.jade" />
-        <option value="$PROJECT_DIR$/frontend/assets/scss/_top.scss" />
-        <option value="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_handson.jade" />
         <option value="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_discussion.jade" />
+        <option value="$PROJECT_DIR$/frontend/assets/scss/_top.scss" />
+        <option value="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_summary.jade" />
+        <option value="$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_handson.jade" />
       </list>
     </option>
   </component>
@@ -405,12 +397,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485229196652</updated>
-      <workItem from="1485229200246" duration="10013000" />
+      <workItem from="1485229200246" duration="14389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10013000" />
+    <option name="totallyTimeSpent" value="14389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -477,14 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/session/_sec_session.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/scss/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1395">
@@ -509,14 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/session.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_sponsoredBy.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-45">
@@ -533,23 +509,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_summary.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="51" selection-start-line="7" selection-start-column="12" selection-end-line="32" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -562,6 +525,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_share.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="20" column="28" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/scss/lib/_mixin.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -572,32 +548,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/scss/_top.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="274" column="18" selection-start-line="274" selection-start-column="18" selection-end-line="274" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="338" column="0" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_share.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="20" column="28" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_handson.jade">
+    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_summary.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/session.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/session/_sec_session.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_discussion.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="244">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/assets/tmpl/top/_sec_handson.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
           <folding />
         </state>
       </provider>
