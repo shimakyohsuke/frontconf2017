@@ -390,6 +390,89 @@ p {
   }
  }
 
+#product-contest {
+  .product-contest__title__background{
+    @include section--title--background;
+    background-image: url("../../img/heading_contest.png");
+    .container {      
+      .product-contest__title {
+        color: $font-light;
+      }
+      .product-contest__subtitle {
+        color: $font-light;
+      }
+    }
+  }
+  .product-contest__content__background {
+    @include section--content--background;
+    .product-contest__text {
+      margin-bottom: 50px;
+    }
+    .product-contest__requirements {
+      background-color: #FFF;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      width: 600px;
+      border-radius: 50px;
+      .product-contest__requirements__top {
+        background-image: url("../../img/bg.jpg");
+        background-position: 95% 100%;
+        color: #FFF;
+        padding: 40px;
+        .product-contest__requirements__summary {
+          letter-spacing: 2px;
+        }
+      }
+      .product-contest__requirements__bottom {
+        padding: 30px 70px;
+        .product-contest__requirements__merit-list {
+          text-align: left;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            $icon-size: 40px;  
+            &:not(:last-child){
+              margin-bottom: 10px;        
+            }
+            span {
+              display: inline-block;
+              line-height: $icon-size;
+              vertical-align: top;
+            }
+            &::before {              
+              display: inline-block;
+              width: $icon-size;
+              height: $icon-size;
+              line-height: $icon-size;
+              text-align: center;
+              margin-right: 10px;              
+              border-radius: 10px;
+              color: #FFF;
+              background-image: url("../../img/bg.jpg");
+            }            
+            &:nth-child(1)::before{
+              background-position: 59% 87%;
+            }
+            &:nth-child(2)::before{
+              background-position: 88% 0%;
+            }
+            &:nth-child(3)::before{
+              background-position: 22% 55%;
+            }
+          }
+        }
+      }
+    }
+    .btn--product-contest {
+      @include btn--line();
+      .product-contest__detaill__link{
+        @include btn;
+      }
+    }
+  }
+}
 
 #speaker {
   text-align: center;
