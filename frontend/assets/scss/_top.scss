@@ -310,10 +310,9 @@ p {
 }
 #handson{
   .handson__title__background{
-    .container{
-      text-align: center;
-      max-width: 1200px;
-      padding:50px;
+    @include section--title--background;
+    background-image: url("../../img/heading_handson.png");
+    .container{      
       .handson__title {
         color: $font-light;
       }
@@ -323,8 +322,7 @@ p {
     }
   }
   .handson__content__background{
-    background-color: rgba(255,255,255,0.6);
-    padding:50px;
+    @include section--content--background;
     .container{
       text-align: center;
       max-width: 1200px;
@@ -349,10 +347,23 @@ p {
           .handson__list__body{
               display: inline-block;
               width:500px;
+              color: $font-light;
+          }
+        }
+        $max:4;
+        @for $i from 1 through $max {  
+          .handson__list:nth-child(#{$max}n + #{$i} ) {
+            background-position: #{$i * 100/$max + "%"} #{$i * 100/$max + "%"};  
           }
         }
       }
-    }
+      .btn--handson{
+          @include btn--line();
+          .handson__detaill__link{
+            @include btn;
+          }
+        }      
+    }    
   }
 }
 #discussion{
