@@ -403,3 +403,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6ffffff',GradientType=0 ); /* IE6-9 */
 
 }
+
+@mixin section--title--background {    
+  padding:calc((400px - 116px) / 2)  50px;
+  text-align: center;  
+}
+
+@mixin section--content--background {
+  text-align: center;
+  background-color: rgba(255,255,255,0.7);
+  padding:50px;
+}
