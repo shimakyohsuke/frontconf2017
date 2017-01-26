@@ -407,6 +407,16 @@
 @mixin section--title--background {    
   padding:calc((400px - 116px) / 2)  50px;
   text-align: center;  
+  @include mediaSP {
+    padding: 40px 10px;
+    background-size: cover;
+    h1{
+      line-height: 30px;
+    }
+    h2 {
+      padding: 0;
+    } 
+  }
 }
 
 @mixin section--content--background {
