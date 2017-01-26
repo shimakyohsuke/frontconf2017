@@ -740,15 +740,19 @@ p {
   .sponsoredBy__lists {    
     width: 100%;
   }
-  .sponsoredBy__list--1 {
+  .sponsoredBy__list--rank1 {
     display: inline-block;
     margin-bottom: 30px;
     @include mediaPC {     
       width: 20%;
       margin-left: 2.5%;
     }
+    @include mediaSP {     
+      width: 47%;
+      margin-left: 2.5%;
+    }
   }
-  .sponsoredBy__list--2 {
+  .sponsoredBy__list--rank2 {
     display: inline-block;
     margin-bottom: 30px;
     @include mediaPC {     
@@ -756,22 +760,22 @@ p {
       margin-left: 10%;
       margin-right: 10%;
     }
+    @include mediaSP {     
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
   }
-  .sponsoredBy__list--3 {
+  .sponsoredBy__list--rank3 {
     display: inline-block;
     margin-bottom: 30px;
     @include mediaPC {     
-      width: 47%;
-      margin-left: 2.5%;
+      width: 100%;      
     }
   }
-  .sponsoredBy__list__logo {
-    // width: 100%;
-    // max-width: 400px;
-    @include mediaPC {
-      width: 100%;
-      height: auto;
-    }
+  .sponsoredBy__list__logo {    
+    width: 100%;
+    height: auto;   
   }
   .sponsoredBy__link-area {
     display: inline-block;

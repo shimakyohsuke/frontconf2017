@@ -6,15 +6,15 @@ section#sponsoredBy
             .sponsoredBy__lists
                 .sponsorBy_lists--rank3                
                     each sponsor in sponsorBy_lists.rank3
-                        a(class="sponsoredBy__list--" + sponsor.rank)(href=sponsor.link target="_blank")
+                        a(class="sponsoredBy__list--rank" + sponsor.rank)(href=sponsor.link target="_blank")
                             img.sponsoredBy__list__logo(src="./img/sponsor/" + sponsor.photo alt=sponsor.name)
                     .sponsorBy_lists--rank2                
                     each sponsor in sponsorBy_lists.rank2
-                        a(class="sponsoredBy__list--" + sponsor.rank)(href=sponsor.link target="_blank")
+                        a(class="sponsoredBy__list--rank" + sponsor.rank)(href=sponsor.link target="_blank")
                             img.sponsoredBy__list__logo(src="./img/sponsor/" + sponsor.photo alt=sponsor.name)
                     .sponsorBy_lists--rank1                
                     each sponsor in sponsorBy_lists.rank1
-                        a(class="sponsoredBy__list--" + sponsor.rank)(href=sponsor.link target="_blank")
+                        a(class="sponsoredBy__list--rank" + sponsor.rank)(href=sponsor.link target="_blank")
                             img.sponsoredBy__list__logo(src="./img/sponsor/" + sponsor.photo alt=sponsor.name)
     .sponsoredBy__link-area
         .btn
