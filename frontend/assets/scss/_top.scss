@@ -809,12 +809,12 @@ p {
   .summary__block {
     margin-bottom: 4.5em;
   }
-  .about__title, .access__title{
+  .about__title, .access__title, .time-table__title{
     color: $font_light;
     font-size: 20px;
     padding: 0;
   }
-  .about__subtitle, .access__subtitle{
+  .about__subtitle, .access__subtitle, .time-table__subtitle{
     color: $font_light;
     font-size: 16px;
     margin-top: 0;
@@ -862,6 +862,10 @@ p {
     padding: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
+    @include mediaSP {
+        width: 90%;
+        height: 300px;
+    }
     .access__map {
       width: 100%;
       height: 100%;
@@ -884,10 +888,53 @@ p {
   }
 
   .access__info {
-    text-align: left;
-    border-spacing: 100px 0px;
+    width: 80%;
     margin: 0 auto;
     color: $font-light;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    @include mediaSP {
+      flex-direction: column;
+    }
+    &__item {
+      text-align: left;
+      flex: 1;   
+      @include mediaSP {
+        margin-bottom: 10px;
+      }
+      &__head {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .time-table__pdf__background {
+    background-image: url("../../img/bg.jpg");
+    width: 80%;
+    height: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @include mediaSP {
+        width: 90%;
+        height: 300px;
+    }
+    .time-table__pdf {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+    }
+  }
+
+  .time-table__link-area {
+    margin-bottom: 30px;
+    .btn--time-table {
+      @include btn--line();
+      .time-table__detaill__link {
+        @include btn;
+      }
+    }
   }
 }
 
