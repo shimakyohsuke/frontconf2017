@@ -55,8 +55,15 @@ const sponsors = [
 	},	
 ]
 
-module.exports = sponsors.sort((a, b) => { 
-	if(a.rank > b.rank) return -1
-	if(a.rank < b.rank) return 1
-	return 0
- })
+let result = {}
+
+sponsors.forEach((sponsor) => {	
+	if(result["rank" + sponsor.rank] === undefined) 
+		result["rank" + sponsor.rank] = []
+	
+	result["rank" + sponsor.rank].push(sponsor)
+})
+
+console.log(result);
+
+module.exports = result

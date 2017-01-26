@@ -2,11 +2,20 @@ section#sponsoredBy
     .container
         .sponsoredBy__heading
             h2.title SPONSORED BY
-        .sponsoredBy__block            
+        .sponsoredBy__block
             .sponsoredBy__lists
-                each sponsor in sponsorBy_lists
-                    a.sponsoredBy__list(href=sponsor.link target="_blank")
-                    img.sponsoredBy__list__logo(src="./img/sponsor/" + sponsor.photo alt=sponsor.name)                
+                .sponsorBy_lists--rank3                
+                    each sponsor in sponsorBy_lists.rank3
+                        a(class="sponsoredBy__list--" + sponsor.rank)(href=sponsor.link target="_blank")
+                            img.sponsoredBy__list__logo(src="./img/sponsor/" + sponsor.photo alt=sponsor.name)
+                    .sponsorBy_lists--rank2                
+                    each sponsor in sponsorBy_lists.rank2
+                        a(class="sponsoredBy__list--" + sponsor.rank)(href=sponsor.link target="_blank")
+                            img.sponsoredBy__list__logo(src="./img/sponsor/" + sponsor.photo alt=sponsor.name)
+                    .sponsorBy_lists--rank1                
+                    each sponsor in sponsorBy_lists.rank1
+                        a(class="sponsoredBy__list--" + sponsor.rank)(href=sponsor.link target="_blank")
+                            img.sponsoredBy__list__logo(src="./img/sponsor/" + sponsor.photo alt=sponsor.name)
     .sponsoredBy__link-area
         .btn
             a(href="https://goo.gl/forms/rh4VqUY0TjLLAJU72",target="_blank")

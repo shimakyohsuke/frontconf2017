@@ -737,19 +737,40 @@ p {
   .sponsoredBy__block {
     margin: 2em 0;
   }
-  .sponsoredBy__list {
+  .sponsoredBy__lists {    
+    width: 100%;
+  }
+  .sponsoredBy__list--1 {
     display: inline-block;
     margin-bottom: 30px;
-    @include mediaPC {
-      height: 200px;
-      margin: 30px;
+    @include mediaPC {     
+      width: 20%;
+      margin-left: 2.5%;
+    }
+  }
+  .sponsoredBy__list--2 {
+    display: inline-block;
+    margin-bottom: 30px;
+    @include mediaPC {     
+      width: 30%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  .sponsoredBy__list--3 {
+    display: inline-block;
+    margin-bottom: 30px;
+    @include mediaPC {     
+      width: 47%;
+      margin-left: 2.5%;
     }
   }
   .sponsoredBy__list__logo {
-    width: 100%;
-    max-width: 400px;
+    // width: 100%;
+    // max-width: 400px;
     @include mediaPC {
-      width: 400px;
+      width: 100%;
+      height: auto;
     }
   }
   .sponsoredBy__link-area {
