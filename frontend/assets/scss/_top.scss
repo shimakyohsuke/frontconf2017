@@ -419,6 +419,7 @@ p {
           border-radius: 4px;
           box-sizing: border-box;
           background-image: url("../../img/bg.jpg");
+          background-size: cover;
           position: relative;
         }
         .discussion__list:after{
@@ -440,7 +441,7 @@ p {
           }
           @include mediaSP {
             .discussion__list:nth-child(#{$max}n + #{$i} ):after{
-              background-position: calc(#{$i * 50/$max + "%"} - 100px) #{$i * 100/$max + "%"};  
+              background-position: calc(#{$i * 50/$max + "%"} - 200px) #{$i * 100/$max + "%"};  
             } 
           }
         }
@@ -577,17 +578,18 @@ p {
       margin-bottom: 10px;
     }
     .after-party__image {
-      width: 750px;
-      height: 312px;      
+      width: 100%;
+      height: auto;      
       border-radius: 40px;
       background-size: cover;      
       background-image: url("../../img/afterParty_img.jpg");
       margin: 0 auto;
       margin-bottom: 30px;
-      @include mediaSP {
-        width: 307px;
-        height: 156px;
-      }
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 50%;
+      }      
     }
   }
   .btn--after-party {
@@ -598,187 +600,20 @@ p {
   }
 }
 
-#speaker {
-  text-align: center;
-  @include page-bottom;
-  @include gradation--top;
-  .container {
-    max-width: 1200px;
-  }
-  .speaker__heading {
-    font-size: 20px;
-    @include heading(color);
-    @include mediaPC {
-      position: relative;
-    }
-  }
-  .speaker__block {
-    margin: 2em 0;
-  }
-  .speaker__lists{
-    display: flex;
-    flex-wrap: wrap;
-    @include mediaPC {
-      justify-content:space-between;
-    }
-  }
-  .speaker__list {
-    display: inline-block;
-    min-width: 100%;
-    max-width: 100%;
-    @include mediaPC {
-      min-width: (80%/2);
-      max-width: (80%/2);
-    }
-  }
-  .speaker__list__pict {
-    width: 40%;
-    border-radius: 50%;
-    max-width: 160px;
-
-  }
-  .speaker__list__name {
-    padding: 0 0 1em;
-    font-size: 1em;
-    font-weight: bold;
-    color: $font_light;
-    @include mediaPC {
-      padding: 0 0 1.6em;
-    }
-  }
-  .speaker__list__balloon--designer {
-    @include balloon--topPage($light-pink);
-  }
-  .speaker__list__balloon--markup {
-    @include balloon--topPage($light-yellow);
-  }
-  .speaker__list__balloon--engineer {
-    @include balloon--topPage($light-blue);
-  }
-  .speaker__link-area {
-    display: inline-block;
-    width: 100%;
-    .btn {
-      @include btn;
-    }
-  }
-}
-
-#sponsor {
-  @include page-bottom;
-  padding-bottom: 6em;
-  @include gradation--bottom;
-
-  .container {
-    text-align: center;
-    max-width: 1200px;
-  }
-  .sponsor__intoro {
-    color: $font_light;
-    margin: 2em 0 4em;
-  }
-  .sponsor__heading {
-    color: $font_light;
-    font-size: 20px;
-    @include heading(white);
-    @include mediaPC {
-      position: relative;
-    }
-  }
-  .sponsor__block {
-
-  }
-  .sponsor__lists {
-    width:100%;
-    text-align: center;
-  }
-  .sponsor__list {
-    vertical-align: top;
-    min-height: 300px;
-    height: auto;
-    overflow: hidden;
-    display: inline-block;
-    margin: 0 0 1.2em;
-    padding:0 0 2em;
-    width: 100%;
-    background: #fff;
-    border-radius: 25px;
-
-    @include mediaPC {
-      margin: 0 .5em 1.2em;
-      padding: 1em .5em 2em;
-      width: 44%;
-    }
-  }
-  .sponsor__list__pict {
-    display: inline-block;
-    margin-top: 1em;
-    width: 130px;
-    height: 110px;
-    background: url(../../img/sponsor01.png) no-repeat center;
-    background-size: contain;
-  }
-  .sponsor__list__title {
-    font-size: 1.3em;
-    font-weight: bold;
-
-    span {
-      display: block;
-      font-size: .7em;
-    }
-  }
-  .sponsor__list__detail {
-    margin: 1em 0;
-
-  }
-  .sponsor__list__share {
-    display: inline-block;
-    margin-bottom: 2em;
-    padding: 2em;
-    max-width: 500px;
-    background-color: lighten( $font, 37% );
-    border-radius: 9999px;
-
-    p {
-      margin-bottom: 1em;
-      font-size: .9em;
-    }
-    .btn--tw {
-      @include btn--line--sponsor{
-        content: "\f099";
-      };
-    }
-    .btn--fb {
-      @include btn--line--sponsor{
-        content: "\f09a";
-      }
-    }
-
-  }
-  .sponsor__list__point {
-    margin-bottom: 1em;
-    font-size: .8em;
-  }
-
-  .btn--sponsor {
-    @include btn--sponsor;
-  }
-
-
-}
-
 #sponsoredBy {
   padding-bottom: 3em;
   text-align: center;
   @include page-bottom;
-  @include gradation--top;
+  // @include gradation--top;
 
   .container {
     max-width: 1200px;
   }
   .sponsoredBy__heading {
+    padding-top: 30px;
     font-size: 20px;
-    @include heading(color);
+    color: white;
+    @include heading(white);
     @include mediaPC {
       position: relative;
     }
@@ -786,15 +621,31 @@ p {
   .sponsoredBy__block {
     margin: 2em 0;
   }
-  .sponsoredBy__lists {    
-    width: 100%;
-  }
+  .sponsoredBy__lists--rank3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }  
+  .sponsoredBy__lists--rank2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  } 
+  .sponsoredBy__lists--rank1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }  
   .sponsoredBy__list--rank1 {
     display: inline-block;
     margin-bottom: 30px;
     @include mediaPC {     
-      width: 20%;
-      margin-left: 2.5%;
+      width: calc(25% - 30px);      
+      margin: 0 15px;
+      margin-bottom: 30px;         
     }
     @include mediaSP {     
       width: 47%;
@@ -804,22 +655,30 @@ p {
   .sponsoredBy__list--rank2 {
     display: inline-block;
     margin-bottom: 30px;
+    @include mediaPC {
+      &:nth-child(odd){
+        margin-right: 30px;
+      }
+      width: 40%;      
+    }
+    @include mediaSP {     
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+  .sponsoredBy__list--rank3 {
+    display: inline-block;
+    margin-bottom: 30px;  
     @include mediaPC {     
-      width: 30%;
-      margin-left: 10%;
-      margin-right: 10%;
+      width: calc(50% - 30px);      
+      margin: 0 15px;
+      margin-bottom: 30px;
     }
     @include mediaSP {     
       width: 80%;
       margin-left: 10%;
       margin-right: 10%;
-    }
-  }
-  .sponsoredBy__list--rank3 {
-    display: inline-block;
-    margin-bottom: 30px;
-    @include mediaPC {     
-      width: 100%;      
     }
   }
   .sponsoredBy__list__logo {    
@@ -837,12 +696,7 @@ p {
 
 #summary {
   text-align: center;
-  @include page-bottom;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.01+0,0+0,0+50,0.7+85,0.9+100 */
-  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.7) 85%, rgba(255,255,255,0.9) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.7) 85%,rgba(255,255,255,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.7) 85%,rgba(255,255,255,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6ffffff',GradientType=0 ); /* IE6-9 */
+  @include page-bottom;  
 
   .container {
     max-width: 1200px;
@@ -989,7 +843,7 @@ p {
 
 #share {
   background: rgba(255,255,255,.9);
-
+  padding-top: 30px;
   .container {
     @include page-bottom;
     text-align: center;
