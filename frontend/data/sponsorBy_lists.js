@@ -52,7 +52,19 @@ const sponsors = [
 		photo: "sponsor_bnr_mercari.png",
 		link: "https://www.mercari.com/jp/jobs/",
 		rank: 1,
-	},	
+	},
+	{
+		name: "アンジップ株式会社",
+		photo: "sponsor_bnr_unzip.png",
+		link: "https://www.unzip.co.jp/",
+		rank: 1,
+	},
+	{
+		name: "株式会社ディー・エヌ・エー",
+		photo: "sponsor_bnr_DeNA.png",
+		link: "http://design.dena.com/",
+		rank: 1,
+	}	
 ]
 
 let result = {}
