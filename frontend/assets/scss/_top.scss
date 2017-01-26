@@ -406,9 +406,6 @@ p {
       .container {
         text-align: center;
         max-width: 1200px;
-        .discussion__text{
-
-        }
         .discussion__lists{
           color:$font-light;
           margin-bottom:50px;
@@ -417,9 +414,10 @@ p {
         .discussion__list{
           list-style: none;
           padding:10px;
-          width:800px;
+          width:100%;
           margin:30px auto;
           border-radius: 4px;
+          box-sizing: border-box;
           background-image: url("../../img/bg.jpg");
           position: relative;
         }
@@ -436,9 +434,14 @@ p {
         @for $i from 1 through $max {  
           .discussion__list:nth-child(#{$max}n + #{$i} ) {
             background-position: #{$i * 50/$max + "%"} #{$i * 100/$max + "%"};  
-          }
+          }          
           .discussion__list:nth-child(#{$max}n + #{$i} ):after{
             background-position: calc(#{$i * 50/$max + "%"} - 200px) #{$i * 100/$max + "%"};  
+          }
+          @include mediaSP {
+            .discussion__list:nth-child(#{$max}n + #{$i} ):after{
+              background-position: calc(#{$i * 50/$max + "%"} - 100px) #{$i * 100/$max + "%"};  
+            } 
           }
         }
         .btn--discussion{
