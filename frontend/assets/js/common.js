@@ -13,7 +13,10 @@ window.initMap = () => {
         position: myLatLng,
         title: 'Hello World!',
         animation: google.maps.Animation.BOUNCE,
-        icon: "../img/map-pin.svg"
+		icon: {
+            url: "../img/map-pin.png",
+            scaledSize : new google.maps.Size(71, 88.5),
+        }
     });
     marker.setMap(map)
     // var directionsService = new google.maps.DirectionsService();

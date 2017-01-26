@@ -3,7 +3,7 @@ const sponsors = [
 		name: "株式会社リアズ",
 		photo: "sponsor_bnr_reas.png",
 		link: "http://reas.jp/",
-		rank: 2,
+		rank: 3,
 	},
 	{
 		name: "株式会社chatbox",
@@ -15,25 +15,25 @@ const sponsors = [
 		name: "デザイナーのイラストノート",
 		photo: "sponsor_bnr_illustrationNoteOfDesigner.png",
 		link: "https://in.spicagraph.com/",
-		rank: 1,
+		rank: 3,
 	},
 	{
 		name: "さくらインターネット株式会社",
 		photo: "sponsor_bnr_sakuraInternet.png",
 		link: "https://www.sakura.ad.jp/",
-		rank: 1,
+		rank: 2,
 	},
 	{
 		name: "サイボウズ株式会社",
 		photo: "sponsor_bnr_cybozu.png",
 		link: "http://blog.cybozu.io/",
-		rank: 1,
+		rank: 2,
 	},
 	{
 		name: "株式会社TAM",
 		photo: "sponsor_bnr_tam.png",
 		link: "http://www.tam-tam.co.jp/",
-		rank: 1,
+		rank: 2,
 	},
 	{		
 		name: "中央システム株式会社",
