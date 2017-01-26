@@ -266,7 +266,8 @@ p {
         flex-wrap: wrap;
         justify-content: space-between;
         .session__list{
-          width:590px;
+          width: 45%;
+          margin-left: 2.5%;
           margin-bottom:20px;
           border:solid 10px white;
           box-sizing: border-box;          
@@ -274,7 +275,10 @@ p {
           display: flex;
           @include mediaSP {
             width: 100%;
-          }          
+          }
+          @media (max-width:1050px) {
+            width: 100%;
+          }
           .session__list__img {
             display: inline-block;
             width: 104px;   
