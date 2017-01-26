@@ -477,7 +477,7 @@ p {
       overflow: hidden;
       margin: 0 auto;
       margin-bottom: 50px;
-      width: 600px;
+      max-width: 600px;
       border-radius: 50px;
       .product-contest__requirements__top {
         background-image: url("../../img/bg.jpg");
@@ -490,22 +490,35 @@ p {
       }
       .product-contest__requirements__bottom {
         padding: 30px 70px;
+        @include mediaSP {
+          padding: 30px 10px;
+        }     
+        max-width: 600px;          
         .product-contest__requirements__merit-list {
           text-align: left;
           list-style: none;
           padding: 0;
-          margin: 0;
+          margin: 0 auto;          
+          max-width: 400px;
+          @include mediaPC {
+                max-width: 600px;
+          }     
           li {
-            $icon-size: 40px;  
+            $icon-size: 40px;    
+            max-width: 100%;          
             &:not(:last-child){
               margin-bottom: 10px;        
             }
-            span {
+            p {
               display: inline-block;
               line-height: $icon-size;
               vertical-align: top;
+              width: calc(100% - 60px);              
+              @include mediaSP{
+                max-width: calc(100% - 60px);
+              }
             }
-            &::before {              
+            .product-contest__requirements__merit-list__checkbox {
               display: inline-block;
               width: $icon-size;
               height: $icon-size;
@@ -516,17 +529,24 @@ p {
               color: #FFF;
               background-image: url("../../img/bg.jpg");
             }            
-            &:nth-child(1)::before{
-              background-position: 59% 87%;
+            
+            &:nth-child(1){
+              .product-contest__requirements__merit-list__checkbox {
+                background-position: 59% 87%;
+              }
             }
-            &:nth-child(2)::before{
-              background-position: 88% 0%;
+            &:nth-child(2){
+              .product-contest__requirements__merit-list__checkbox {
+                background-position: 88% 0%;
+              }
             }
-            &:nth-child(3)::before{
-              background-position: 22% 55%;
-            }
+            &:nth-child(3){
+              .product-contest__requirements__merit-list__checkbox {                
+                background-position: 22% 55%;
+              }
+            }            
           }
-        }
+        }        
       }
     }
     .btn--product-contest {
