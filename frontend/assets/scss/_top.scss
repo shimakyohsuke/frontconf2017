@@ -335,24 +335,37 @@ p {
 
       }
       .handson__lists{
+        padding: 0;
         .handson__list{
           list-style: none;
           width:800px;
           margin:30px auto;
           border-radius: 4px;
           background-image: url("../../img/bg.jpg");
-          .handson__list__head{
-              display:inline-block;
+          display: flex;   
+          @include mediaSP {                
+                width: 100%;
+                flex-direction: column;
+          }       
+          .handson__list__head{              
               width:300px;
               background-color:white;
               padding:10px;
               box-sizing: border-box;
               border-radius: 3px;
+              @include mediaSP {
+                border-radius: 3px 3px 0 0;
+                width: 100%;                
+              }
           }
-          .handson__list__body{
-              display: inline-block;
+          .handson__list__body{              
               width:500px;
+              padding:10px;
               color: $font-light;
+              box-sizing: border-box;
+              @include mediaSP {
+                width: 100%;                
+              }
           }
         }
         $max:4;
