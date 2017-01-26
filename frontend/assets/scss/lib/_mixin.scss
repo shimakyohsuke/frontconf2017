@@ -1,5 +1,5 @@
 @mixin mediaSP {
-  @media screen and (min-width:$break-point) and (max-width:$break-pointSP) {
+  @media screen  and (max-width:$break-pointSP) {
     @content
   }
 }
