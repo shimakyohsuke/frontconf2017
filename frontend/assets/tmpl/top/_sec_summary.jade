@@ -3,30 +3,62 @@ section#summary
         .summary__heading
             h2.title SUMMARY
         .summary__block
-            ul.summary__lists
-                li.summary__list
-                    .summary__list__heading 日時
-                    .summary__list__content 2017年3月18日（土）10:00-18:00
-                li.summary__list
-                    .summary__list__heading 場所
-                    .summary__list__content: a.reset(href="http://www.temmacenter.com/shin_umeda/access/index.html",target="_blank") 新梅田研修センター
-                li.summary__list
-                    .summary__list__heading 主催
-                    .summary__list__content 関西フロントエンドUG
-                li.summary__list
-                    .summary__list__heading 対象者
-                    .summary__list__content Web制作に携わるすべての人へ
-                li.summary__list
-                    .summary__list__heading 定員
-                    .summary__list__content 300名
-                li.summary__list
-                    .summary__list__heading 参加登録
-                    .summary__list__content 2月中旬頃発表
-                li.summary__list
-                    .summary__list__heading ハッシュタグ
-                    .summary__list__content: a.reset(href="https://twitter.com/hashtag/frontkansai",target="_blank") #frontkansai
-                li.summary__list
-                    .summary__list__heading お問合わせ
-                    .summary__list__content
-                        |お問合わせは
-                        a.summary__list__contactLink(href="#footer") こちら
+            h2.about__title ABOUT
+            h3.about__subtitle 基本情報
+            table.about__table
+                tbody.about__tbody
+                    tr.about__tr
+                        th.about__th 日時
+                            td.about__td 2017年3月18日　10:00-18:00
+                    tr.about__tr
+                        th.about__th 場所
+                            td.about__td 新梅田研修センター
+                    tr.about__tr
+                        th.about__th 主催
+                            td.about__td 関西フロントエンドUG
+                    tr.about__tr
+                        th.about__th 対象者
+                            td.about__td Webに関心のある全ての人
+                    tr.about__tr
+                        th.about__th 定員
+                            td.about__td 300名
+                    tr.about__tr
+                        th.about__th 参加登録
+                            td.about__td ２月中旬頃発表
+                    tr.about__tr
+                        th.about__th ハッシュタグ
+                            td.about__td #frontkansai
+                    tr.about__tr
+                        th.about__th お問い合わせ
+                            td.about__td お問い合わせはこちら
+        .summary__block
+            h2.access__title ACCESS
+            h3.access__subtitle アクセス
+            .access__map__background
+                .access__map
+                    #map
+            .access__link-area
+                .btn--access
+                    a(href="https://goo.gl/maps/hBYk8ddqf8S2" target="_blank").access__detaill__link
+                        span GoogleMap で開く
+            
+            .access__info
+                .access__info__item
+                    .access__info__item__head
+                        i.fa.fa-map-marker 
+                        span 新梅田研修センター
+                    .access__info__item__body 〒553-0003 <br>大阪府大阪市福島区福島6-22-20
+                .access__info__item
+                    .access__info__item__head
+                        i.fa.fa-train
+                        span 電車でのアクセス
+                    .access__info__item__body JR大阪駅　徒歩10分            
+        //- .summary__block
+        //-     h2.time-table__title TIME TABLE
+        //-     h3.time-table__subtitle タイムテーブル
+        //-     .time-table__pdf__background
+        //-         .time-table__pdf
+        //-     .time-table__link-area
+        //-         .btn--time-table
+        //-             a.time-table__detaill__link
+        //-                 span 別窓で開く
