@@ -14,7 +14,7 @@ window.initMap = () => {
         title: 'Hello World!',
         animation: google.maps.Animation.BOUNCE,
 		icon: {
-            url: "../img/map-pin.png",
+            url: "./img/map-pin.png",
             scaledSize : new google.maps.Size(71, 88.5),
         }
     });
