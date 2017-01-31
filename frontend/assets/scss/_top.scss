@@ -424,6 +424,7 @@ p {
         }
         .discussion__list:after{
           position: absolute;
+          display: none;
           content:"";
           transform: rotate(-45deg);
           padding:10px;
