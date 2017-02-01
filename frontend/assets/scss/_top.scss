@@ -686,9 +686,9 @@ p {
 
   .container {
     max-width: 1200px;
+    padding-top: 30px; 
   }
-  .sponsoredBy__heading {
-    padding-top: 30px;
+  .sponsoredBy__heading {    
     font-size: 20px;
     color: white;
     @include heading(white);
@@ -777,7 +777,7 @@ p {
   @include page-bottom;  
 
   .container {
-    max-width: 1200px;
+    max-width: 1200px;    
   }
   .summary__heading {
     font-size: 20px;
@@ -786,6 +786,7 @@ p {
     @include mediaPC {
       position: relative;
     }
+    margin-bottom: 30px;
   }
   .summary__block {
     margin-bottom: 4.5em;
