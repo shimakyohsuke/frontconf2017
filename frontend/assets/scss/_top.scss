@@ -424,13 +424,17 @@ p {
             box-sizing: border-box;
             color: $font_light;
           }
-        }
-        $max:3;
-        @for $i from 1 through $max {  
-          .session__list:nth-child(#{$max}n + #{$i} ) {
-            background-position: #{$i * 100/$max + "%"} #{$i * 100/$max + "%"};  
+          &--markup {
+            background-position: 95% 0;
+            background-size: 400%;
           }
-        }
+          &--designer {
+            background-position: 95% 90%;
+          }
+          &--engineer {
+            background-position: 0 0;
+          }
+        }        
       }
       .btn--session{
           @include btn--line();
