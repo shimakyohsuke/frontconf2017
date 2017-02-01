@@ -908,6 +908,7 @@ p {
       @include btn--line();
       .access__detaill__link {
         @include btn;
+        padding: 5px 0 !important;
       }
     }
   }
