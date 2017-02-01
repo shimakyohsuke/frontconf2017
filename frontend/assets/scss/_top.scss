@@ -183,7 +183,21 @@ p {
       margin-top: 3em;
       font-size: 1.4em;
     }
-
+    &__to-access {
+      margin-left: 30px;
+      background-color: rgba(107,107,107,0.5);
+      padding: 8px 40px;
+      border-radius: 30px;
+      font-size: 16px;
+      vertical-align: text-bottom;
+      a {
+        color: #FFF;
+        i {
+          margin-right: 4px;
+        }
+      }
+      
+    }
   }
   .hero__action-area {
     display: inline-block;
