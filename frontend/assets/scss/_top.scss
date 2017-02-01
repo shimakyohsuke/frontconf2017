@@ -179,6 +179,7 @@ p {
     font-size: 1.2em;
     font-weight: bold;
     font-family: $font_set_ja;
+    white-space:nowrap;      
     @include mediaPC {
       margin-top: 3em;
       font-size: 1.4em;
@@ -190,6 +191,9 @@ p {
       border-radius: 30px;
       font-size: 16px;
       vertical-align: text-bottom;
+      @include mediaSP {
+        margin-left: 0px;
+      }
       a {
         color: #FFF;
         i {
@@ -212,28 +216,44 @@ p {
   .main-menu {
     list-style: none;
     display: flex;
-    margin: 0 auto;
-    width: 1200px;
+    margin: 0 auto;    
+    width: 100%;
+    padding: 0px;
     justify-content: space-around;
     margin-bottom: 100px;
-    &__item {
-      width: 160px;
+    flex-wrap: wrap;    
+    @include mediaSP {      
+      width: 100%;
+      justify-content: space-between;      
+    } 
+    &__item {      
       border: solid 4px #FFF;
       text-align: center;
       padding: 10px;
       margin: 0 10px;
       border-radius: 50px;
       transition: all 0.5s;
-      &:hover{          
-        letter-spacing: 8px;    
-        background: rgb(242,131,104); /* Old browsers */
-        background: -moz-linear-gradient(left,  rgba(242,131,104,1) 27%, rgba(87,192,237,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
+      @include mediaSP {
+        width: 30%;
+        margin: 0 0px;
+        margin-bottom: 10px; 
+        box-sizing: border-box;
+        font-size: 0.7em;        
+      }
+      @include mediaPC {
+        flex:1;
+        &:hover{
+          letter-spacing: 1px;    
+          background: rgb(242,131,104); /* Old browsers */
+          background: -moz-linear-gradient(left,  rgba(242,131,104,1) 27%, rgba(87,192,237,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
+        }
       }
       a {
         color: #FFF;        
-      }      
+      }
+      
     }
   }
   .to-menu {
@@ -263,10 +283,33 @@ p {
       height: 100%;   
     }
     &__icon {    
-      font-size: 3em;
+      font-size: 54px;
     }
     &__caption {
       margin-top: -15px;
+    }
+    @include mediaSP {
+      top: auto;
+      right: 10px;
+      bottom: 20px;
+      width: 40px;
+      height: 40px;
+      &__link {      
+        position: absolute;
+        top: 0px;
+        left: 0;
+        color: inherit;   
+        display: block;
+        width: 100%;    
+        height: 100%;   
+      }
+      &__icon {    
+        font-size: 24px;
+      }
+      &__caption {
+        font-size: 0.5rem;
+        margin-top: -9px;
+      }
     }
   }
 }
