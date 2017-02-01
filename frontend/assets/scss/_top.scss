@@ -191,11 +191,11 @@ p {
       border-radius: 30px;
       font-size: 16px;
       vertical-align: text-bottom;
+      color: #FFF;
       @include mediaSP {
         margin-left: 0px;
-      }
       a {
-        color: #FFF;
+      }
         i {
           margin-right: 4px;
         }
@@ -229,7 +229,6 @@ p {
     &__item {      
       border: solid 4px #FFF;
       text-align: center;
-      padding: 10px;
       margin: 0 10px;
       border-radius: 50px;
       transition: all 0.5s;
@@ -250,10 +249,15 @@ p {
           background: linear-gradient(to right,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
         }
       }
-      a {
-        color: #FFF;        
-      }
-      
+      .btn {
+        a {
+          display: block;
+          padding: 10px;
+          width: 100%;
+          color: #FFF;      
+          box-sizing: border-box;  
+        }
+      }      
     }
   }
   .to-menu {
