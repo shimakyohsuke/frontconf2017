@@ -930,6 +930,9 @@ p {
       }
       &__head {
         font-weight: bold;
+        i {
+          margin-right: 5px;
+        }
       }
     }
   }
