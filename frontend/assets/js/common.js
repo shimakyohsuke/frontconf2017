@@ -1,4 +1,3 @@
-console.log("hello world");
 var map;
 var marker;
 
@@ -18,31 +17,18 @@ window.initMap = () => {
             scaledSize : new google.maps.Size(71, 88.5),
         }
     });
-    marker.setMap(map)
-    // var directionsService = new google.maps.DirectionsService();
-    // var request = {
-    //     origin: {lat: 34.702635, lng: 135.495940},
-    //     //出発地点
-    //     destination: myLatLng,
-    //     //行き先
-    //     travelMode: google.maps.DirectionsTravelMode.WALKING
-    //     //移動手段
-    // }
-    // directionsService.route(request,function(result, status){
-    //     let directionsDisplay = new google.maps.DirectionsRenderer({
-    //         suppressMarkers: true,
-    //         polylineOptions:{
-    //             strokeColor: "#279abc",
-    //             strokeWeight: 5,                
-    //         }
-    //     });
-    //     directionsDisplay.setDirections(result);
-    //     //経路情報を取得する
-    //     directionsDisplay.setMap(map);
-    //     //取得した経路情報を描画する
-    //     setTimeout(function () {
-    //     },0)
-    //     //少し後に実行する
-    // });
+    marker.setMap(map)    
 	map.setZoom(17)
 }
+
+$(() => {
+    const menuScrollTop = $('#main-menu').offset().top;
+    $(window).scroll((e) => {    
+        let scrollTop = $(e.target).scrollTop()                
+        if(menuScrollTop < scrollTop) {
+            $('.to-menu').fadeIn(1000)
+        } else {
+            $('.to-menu').fadeOut(1000)
+        }
+    })
+});

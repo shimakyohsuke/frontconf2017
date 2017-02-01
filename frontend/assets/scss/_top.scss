@@ -208,6 +208,69 @@ p {
   }
 }
 
+#main-menu {
+  .main-menu {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    &__item {
+      width: 160px;
+      border: solid 4px #FFF;
+      text-align: center;
+      padding: 10px;
+      margin: 0 10px;
+      border-radius: 50px;
+      transition: all 0.5s;
+      &:hover{          
+        letter-spacing: 8px;    
+        background: rgb(242,131,104); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(242,131,104,1) 27%, rgba(87,192,237,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
+      }
+      a {
+        color: #FFF;        
+      }      
+    }
+  }
+  .to-menu {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    border: solid 3px #FFF;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.3);
+    background: rgb(242,131,104); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(242,131,104,1) 27%, rgba(87,192,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(242,131,104,1) 27%,rgba(87,192,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
+    color: #FFF;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    &__link {      
+      position: absolute;
+      top: -7px;
+      left: 0;
+      color: inherit;   
+      display: block;
+      width: 100%;    
+      height: 100%;   
+    }
+    &__icon {    
+      font-size: 3em;
+    }
+    &__caption {
+      margin-top: -15px;
+    }
+  }
+}
+
 #concept {
   @include page-bottom;
   background: linear-gradient(to bottom,  rgba(254,225,176,0.01) 0%,rgba(255,253,240,0.58) 38%,rgba(255,255,251,0.9) 59%,rgba(255,255,255,0.9) 66%);
