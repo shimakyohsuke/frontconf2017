@@ -1,5 +1,25 @@
 module.exports = [
     {
+        id: 13,
+        title: "あらゆる人のためのフロントエンド",
+        detail : "マークアップにエンジニア、デザイナーと、様々な業種が交わるフロントエンド開発。モダンなフレームワークの設計などからも、それぞれのレイヤーにどれだけ重きが置かれているかを見ることができますが、今一度、多くの人が幸せになれるフロントエンドについて考えてみたいと思います。",
+        link: "https://potato4d.me",
+        photo: "potato.jpg",
+        name: "花谷拓磨(Potato4d)",
+        profile: "FRONTEND CONFERENCE 2017実行委員長。高校生。 ベンチャー企業でJavaScriptエンジニアやデザイナーをやっていたら春からピクシブで仕事することになりました。",
+        field: "engineer"
+    },
+    {
+        id: 14,
+        title: "React/FluxベースのElectronアプリをリモートチームで開発した話",
+        detail : "昨年末の社内ハッカソンで、Electron/React/Fluxを使い、社内向けツールをリモート開発しました。Electron/React/Fluxの一般的なメリット・はまり所などの紹介に加えて、時間的・空間的制約のある開発の中で見えてきたことについてもお話しします。",
+        link: "https://cybozu.co.jp/",
+        photo: "ota.jpg",
+        name: "太田 絵一郎",
+        profile: " サイボウズ株式会社/大阪開発部所属、入社2年目のWebエンジニア。 入社後、グループウェア製品であるkintone、サイボウズOfficeの開発に従事するかたわら、 社内のカフェ部大阪支部長を務め、日々コーヒーを飲んでいる。",
+        field: "engineer"
+    },
+    {
         id: 1,
         title: "HTMLスナップショット2016改",
         detail : "昨年9月に東京で開催されたHTML5 Conferenceのセッション「HTMLスナップショット2016」を圧縮して改変するものです。",
