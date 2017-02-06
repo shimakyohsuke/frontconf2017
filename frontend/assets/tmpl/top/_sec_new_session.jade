@@ -9,7 +9,12 @@ section#new_session
     .session__content__background
         .container
             div.session__lists
-                each speaker in speaker_lists
+                - var speaker = speaker_lists[0]
+                a(href="./session.html#" + speaker.id class="session__list--" + speaker.field).session__list
+                    .session__list__img(style="background-image: url('./img/speaker/" + speaker.photo + "')")
+                    p.session__list__text #{speaker.title}
+                div(style="width:45%")
+                each speaker in speaker_lists.slice(1)
                     a(href="./session.html#"+speaker.id class="session__list--" + speaker.field).session__list
                         .session__list__img(style="background-image: url('./img/speaker/" +speaker.photo + "')")
                         p.session__list__text #{speaker.title}

@@ -139,4 +139,14 @@ module.exports = [
         profile: "長崎でフリーランスとしてWordPressテーマ・プラグイン開発やHTML/CSSコーディングなどの仕事をしながら、色々なプロダクトをOSSとして公開しています。",
         field: "designer"
     },
+    {
+        id: 15,
+        title: "フロントエンドの制作現場をレガシー化させないために",
+        detail : "フロントエンドは流れが速いとか、いや最近はそうでもないとか、いろいろな話が交わされる中、フロントエンドのイマと技術選択との程よい距離感を探るために必要なものを考えてみましょう。",
+        link: "https://chatbox-inc.com/member/mikakane",
+        photo: "mikakane.jpg",
+        name: "後藤 知宏",
+        profile: "大阪で株式会社chatbox というWeb制作の会社をやっています。受託制作の傍ら、技術顧問をやったり、セミナー・イベントをやったり。",
+        field: "engineer"
+    },
 ];

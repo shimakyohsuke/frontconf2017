@@ -23,7 +23,7 @@ section#session__child
                         .session-detail__mentor__icon(style="background-image: url('./img/speaker/" +session.photo + "')")                    
                         .session-detail__mentor__name
                             | #{session.name}
-                            a.session-detail__mentor__link(href=session.link )
+                            a.session-detail__mentor__link(href=session.link,target="_blank")
                                 i.fa.fa-link
                         p.session-detail__mentor__introduction
                             | #{session.profile}
