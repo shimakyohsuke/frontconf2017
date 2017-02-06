@@ -111,6 +111,7 @@ p {
                   @include mediaSP {
                     width: 100px;
                     height: 100px;
+                    margin-right: 5px;
                   }
                 }
                 &__name {
@@ -123,16 +124,15 @@ p {
                     height: auto;      
                   }
                   @include mediaSP {
-                    width: calc(100% - 120px);
+                    width: calc(100% - 105px);
                     height: 100px;
                     padding: 38px 0;
                     box-sizing: border-box;
-                    margin-bottom: 10px;
+                    margin-bottom: 10px;     
                     font-size: 15px;
                   }
                 }
-                &__link {
-                  margin-left: 10px;
+                &__link {                  
                   border-radius: 50%;
                   border: solid 1px #FFF;
                   background-color: rgba(255,255,255,0.8);                  
@@ -153,10 +153,12 @@ p {
                   @include mediaPC {
                     width: 30px;
                     height: 30px;
+                    margin-left: 10px;
                   }
                   @include mediaSP {
                     width: 20px;
                     height: 20px;
+                    margin-left: 2px;
                   }                  
                 }
                 &__introduction {
