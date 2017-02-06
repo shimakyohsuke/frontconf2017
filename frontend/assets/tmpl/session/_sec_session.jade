@@ -1,25 +1,31 @@
-section#session
-    .container
-        .session__heading
-            h2.title SESSION
-        .session__block
-            .session_lists
-                each speaker in speaker_lists
-                    div.session__list(id=""+speaker.id)
-                        div(class="session__list__balloon--"+speaker.field)
-                            p.session__list__title #{speaker.title}
-                            p.session__list__detail #{speaker.detail}
-                        .session__list__pict
-                            img(src="./img/speaker/"+speaker.photo)
-                        .session__list__info
-                            p.session__list__name #{speaker.name}
-                            a.session__list__link(href=""+speaker.link target="_blank") <i class="fa fa-link" aria-hidden="true"></i>
-                            p.session__list__profile #{speaker.profile}
+include ../common/_child_header.jade
+section#session__child
+    .session__child__title__background
+        .container
+            h1.session__title SESSION
+            h2.session__subtitle セッション
+    .session__child__content__background
+        p.session__child__content__summary
+            | 昨年人気だったハンズオン企画を今年も開催します！
             br
-            p(style="text-align:center;color:white;") and more...
-
-
-        .session__link-area
-            .btn
-                a(href="./")
-                    span TOP に戻る
+            | 実際に手を動かしながら流行りのツールやフレームワークの学習ができます。
+            br
+            | メンターによるサポートもありますので初心者の方も是非、参加してみてください。
+        .session-detail-list
+            each session in speaker_lists
+                .session-detail-list__item(class="session-detail-list__item--" + session.field id=session.id)
+                    .session-detail__title
+                        | #{session.title}
+                    .session-detail__summary
+                        | #{session.detail}
+                    .session-detail__line
+                    .session-detail__mentor
+                        .session-detail__mentor__left
+                            .session-detail__mentor__icon(style="background-image: url('./img/speaker/" +session.photo + "')")
+                        .session-detail__mentor__right
+                            .session-detail__mentor__name
+                                | #{session.name}
+                                a.session-detail__mentor__link(href=session.link )
+                                    i.fa.fa-link
+                            p.session-detail__mentor__introduction
+                                | #{session.profile}
