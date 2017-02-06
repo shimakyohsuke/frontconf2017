@@ -3,7 +3,7 @@ const sponsors = [
 		name: "株式会社リアズ",
 		photo: "sponsor_bnr_reas.png",
 		link: "http://reas.jp/",
-		rank: 1,
+		rank: 2,
 	},
 	{
 		name: "株式会社chatbox",
@@ -27,7 +27,7 @@ const sponsors = [
 		name: "サイボウズ株式会社",
 		photo: "sponsor_bnr_cybozu.png",
 		link: "http://blog.cybozu.io/",
-		rank: 1,
+		rank: 3,
 	},
 	{
 		name: "株式会社TAM",
@@ -45,7 +45,7 @@ const sponsors = [
 		name: "株式会社クリーク・アンド・リバー社",
 		photo: "sponsor_bnr_creeekAndRiver.png",
 		link: "http://www.cri.co.jp/",
-		rank: 1,
+		rank: 2,
 	},
 	{		
 		name: "株式会社メルカリ",
@@ -59,12 +59,18 @@ const sponsors = [
 		link: "https://www.unzip.co.jp/",
 		rank: 1,
 	},
-	{
-		name: "株式会社ディー・エヌ・エー",
-		photo: "sponsor_bnr_DeNA.png",
-		link: "http://design.dena.com/",
-		rank: 1,
-	}	
+    {
+        name: "株式会社ディー・エヌ・エー",
+        photo: "sponsor_bnr_DeNA.png",
+        link: "http://design.dena.com/",
+        rank: 2,
+    },
+    {
+        name: "株式会社ロックオン",
+        photo: "sponsor_bnr_lockon.png",
+        link: "http://www.ec-cube.net/",
+        rank: 2,
+    }
 ]
 
 let result = {}
@@ -76,6 +82,23 @@ sponsors.forEach((sponsor) => {
 	result["rank" + sponsor.rank].push(sponsor)
 })
 
-console.log(result);
+result.media = [
+	{
+        name: "株式会社メルカリ",
+        photo: "sponsor_bnr_gihyo.png",
+        link: "http://gihyo.jp/",
+        rank: 1,
+	}
+]
+
+result.supported = [
+	{
+        name: "ng-kyoto",
+        photo: "sponsor_bnr_ngkyoto.png",
+        link: "https://ng-kyoto.github.io/",
+        rank: 1,
+	}
+]
+
 
 module.exports = result
