@@ -37,86 +37,169 @@ p {
       &__background {
         padding: 50px 0;
         background-color: rgba(199,232,245,0.8);
+        @include mediaSP {
+          padding: 50px 15px;
+        }
+        @include mediaPC {
+          padding: 50px 30px;
+        }
         .session-detail-list {
           width: 100%;
           max-width: 1000px;
           margin: 0 auto;
+          margin-bottom: 50px;         
           &__item:not(:last-child) {
-            margin-bottom: 50px;
+            margin-bottom: 50px;            
           }
           &__item {
             border: solid 3px #FFF;
             color: #FFF;
             background-image: url("../../img/bg.jpg");
             width: 100%;
-            padding: 40px;
             box-sizing: border-box;
             text-align: left;
+            @include mediaPC {
+              padding: 40px;              
+              box-sizing: border-box
+            }
+            @include mediaSP {
+              padding: 15px;
+              box-sizing: border-box
+            }
             .session-detail {
               &__title {
-                margin-bottom: 40px;
                 font-weight: bold;
+                @include mediaPC {
+                  margin-bottom: 40px;
+                }
+                @include mediaSP {
+                  margin-bottom: 10px;
+                  font-size: 15px;
+                }
               }
               &__summary {
-                margin-bottom: 40px;
+                @include mediaPC {
+                  margin-bottom: 40px;
+                }
+                @include mediaSP {
+                  margin-bottom: 10px;
+                  font-size: 13px;
+                }
               }
               &__line {
                 border-bottom: dashed 2px #FFF;
-                margin-bottom: 30px;                
+                @include mediaPC {
+                  margin-bottom: 30px;                 
+                }
+                @include mediaSP {
+                  margin-bottom: 10px;
+                }
               }
               &__mentor {
-                display: flex;
+                // display: flex;
+                flex-wrap: wrap;
                 &__icon {
+                  float: left;
                   background-position: center;
                   background-size: contain;
-                  width: 200px;
-                  height: 200px;
                   border-radius: 100%;
                   margin-right: 20px;
-                  
+                  @include mediaPC {
+                    width: 200px;
+                    height: 200px;                    
+                  }
+                  @include mediaSP {
+                    width: 100px;
+                    height: 100px;
+                  }
                 }
                 &__name {
                   margin-bottom: 20px;
-                  font-size: 1.5em;                  
+                  font-size: 1.5em;
+                  float: right;
+                  font-weight: bold;
+                  @include mediaPC {
+                    width: calc(100% - 220px);
+                    height: auto;      
+                  }
+                  @include mediaSP {
+                    width: calc(100% - 120px);
+                    height: 100px;
+                    padding: 38px 0;
+                    box-sizing: border-box;
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                  }
                 }
                 &__link {
                   margin-left: 10px;
                   border-radius: 50%;
                   border: solid 1px #FFF;
-                  background-color: rgba(255,255,255,0.8);
-                  width: 30px;
-                  height: 30px;
+                  background-color: rgba(255,255,255,0.8);                  
                   display: inline-block;
                   text-align: center;
                   vertical-align: text-bottom;
                   i {
                     vertical-align: text-top;
                     color: #A8A19E;
-                    font-size: 22px;                                        
+                    font-size: 22px;
+                    margin-top: -2px;
+                    @include mediaSP {
+                      vertical-align: middle;
+                      font-size: 13px;
+                      margin-top: -7px;
+                    }               
                   }
+                  @include mediaPC {
+                    width: 30px;
+                    height: 30px;
+                  }
+                  @include mediaSP {
+                    width: 20px;
+                    height: 20px;
+                  }                  
                 }
                 &__introduction {
                   font-family: "yu-gosic";
                   word-break: break-all;
+                  float: right;
+                  @include mediaPC {
+                    width: calc(100% - 220px);
+                  }
+                  @include mediaSP {
+                    font-size: 13px;
+                  }
                 }
+              }
+              &__mentor:before, &__mentor:after{
+                content: " ";
+                display: table;
+              }
+              &__mentor:after{
+                clear: both;
               }
             }
           }
           &__item--markup {
             background-position: 95% 0;
-            background-size: 300%; 
+            background-size: 500%; 
           }
           &__item--designer {
-            background-position: 0 0;
-            background-size: 300%;
+            background-position: 95% 90%;
+            background-size: 400%;
           }
           &__item--engineer {
-            background-position: 95% 90%;
+            background-position: 0 0;
             background-size: 300%; 
           }
         }
-      }
-            
+        .btn--to-top {
+          @include btn--line();
+          .to-top__link {
+            @include btn;
+          }
+        }
+      }            
     }
   }
 }

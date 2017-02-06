@@ -19,13 +19,14 @@ section#session__child
                     .session-detail__summary
                         | #{session.detail}
                     .session-detail__line
-                    .session-detail__mentor
-                        .session-detail__mentor__left
-                            .session-detail__mentor__icon(style="background-image: url('./img/speaker/" +session.photo + "')")
-                        .session-detail__mentor__right
-                            .session-detail__mentor__name
-                                | #{session.name}
-                                a.session-detail__mentor__link(href=session.link )
-                                    i.fa.fa-link
-                            p.session-detail__mentor__introduction
-                                | #{session.profile}
+                    .session-detail__mentor                    
+                        .session-detail__mentor__icon(style="background-image: url('./img/speaker/" +session.photo + "')")                    
+                        .session-detail__mentor__name
+                            | #{session.name}
+                            a.session-detail__mentor__link(href=session.link )
+                                i.fa.fa-link
+                        p.session-detail__mentor__introduction
+                            | #{session.profile}
+        .btn--to-top
+                    a(href="/").to-top__link
+                        span TOPに戻る
