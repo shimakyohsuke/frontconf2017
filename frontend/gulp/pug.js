@@ -21,6 +21,7 @@ gulp.task("pug",()=> {
                 sponsor_lists: require("../data/sponsor_lists.js"),
                 sponsorBy_lists: require("../data/sponsorBy_lists.js"),
                 speaker_lists: require("../data/speaker_lists.js"),
+                handson_lists: require("../data/handson_lists.js"),
             },
             pretty:true
         }))
