@@ -70,7 +70,13 @@ const sponsors = [
         photo: "sponsor_bnr_lockon.png",
         link: "http://www.ec-cube.net/",
         rank: 2,
-    }
+    },
+    {
+        name: "株式会社ピクセルグリッド",
+        photo: "sponsor_bnr_pixelGrid.png",
+        link: "https://www.pxgrid.com/ ",
+        rank: 1,
+    },
 ]
 
 let result = {}
